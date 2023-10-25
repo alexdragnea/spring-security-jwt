@@ -1,0 +1,15 @@
+server:
+  port: 8888
+
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5433/userdb
+    username: postgres
+    password: admin
+  jpa:
+    hibernate:
+      ddl-auto: update
+
+app:
+  jwtSecret: ======================jwtsecret=======================
+  jwtExpirationMs: 1
